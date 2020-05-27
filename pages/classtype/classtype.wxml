@@ -1,0 +1,17 @@
+<!--pages/classtype/classtype.wxml-->
+<view class="container">
+  <view class="menu">
+    <view id="{{item.id}}" class="classtype" bindtap="searchTab" wx:for="{{classType}}" wx:key="index">
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="productList" wx:for="{{productList==''?productAll:productList}}" wx:key="index">
+    <image src="{{item.src}}" mode="widthFix"></image>
+    <view class="info">
+      <text>{{item.name}}</text>
+      <text>{{item.price}}</text>
+    </view>
+  </view>
+  </view>
+</view>

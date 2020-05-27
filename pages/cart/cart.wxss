@@ -1,0 +1,36 @@
+/* pages/cart/cart.wxss */
+scroll-view{
+  width: 100%;
+  height: 90vh;
+}
+
+.product{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #5599ff;
+}
+
+.info{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info .price{
+  color: red;
+  font-weight: 600;
+}
+
+.product image{
+  width: 200rpx;
+}
+
+.bottom{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
